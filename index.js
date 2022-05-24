@@ -1,3 +1,4 @@
+"use strict";
 let calc = "";
 
 function updateDisplay(text) {
@@ -13,10 +14,15 @@ function input(value) {
 function calculate() {
 	try {
 		calc = eval(calc).toString();
+		if (calc == "NaN") {
+			calc = "";
+			updateDisplay("undefined");
+		} else 
+			updateDisplay(calc);
 	} catch (err) {
-		calc = "error";
+		calc = "";
+		updateDisplay("error");
 	}
-	updateDisplay(calc);
 }
 
 function displayClear() {
