@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg height="14" width="14" style="background-color: #555" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<!-- - -->
-	<rect fill="white" width="5" height="1" x="1" y="3"/>
-	<!-- + -->
-	<rect fill="white" width="5" height="1" x="1" y="10"/>
-	<rect fill="white" width="1" height="5" x="3" y="8"/>
-	<!-- / -->
-	<rect fill="white" width="1" height="1" x="10" y="1"/>
-	<rect fill="white" width="5" height="1" x="8" y="3"/>
-	<rect fill="white" width="1" height="1" x="10" y="5"/>
-	<!-- * -->
-	<rect fill="white" width="1" height="1" x="8" y="8"/>
-	<rect fill="white" width="1" height="1" x="8" y="12"/>
-	<rect fill="white" width="1" height="1" x="12" y="8"/>
-	<rect fill="white" width="1" height="1" x="12" y="12"/>
-	<rect fill="white" width="1" height="1" x="9" y="9"/>
-	<rect fill="white" width="1" height="1" x="9" y="11"/>
-	<rect fill="white" width="1" height="1" x="11" y="9"/>
-	<rect fill="white" width="1" height="1" x="11" y="11"/>
-	<rect fill="white" width="1" height="1" x="10" y="10"/>
+<svg viewBox="0 0 8 8" style="background-color:#555" xmlns="http://www.w3.org/2000/svg">
+	<text x="0" y="4" style="font: 8px Courier New; fill:#fff">-</text>
+	<text x="0" y="8" style="font: 8px Courier New; fill:#fff">+</text>
+	<text x="3" y="4" style="font: 8px Courier New; fill:#fff">÷</text>
+	<text x="3" y="8" style="font: 8px Courier New; fill:#fff">×</text>
 </svg>
