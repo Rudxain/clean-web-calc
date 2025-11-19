@@ -1,12 +1,12 @@
 let calc = "";
 
-function updateDisplay(output) {
-	document.getElementById("display").innerHTML = output;
+function updateDisplay(text) {
+	document.getElementById("display").innerHTML = text;
 }
 
 function input(value) {
-	if(calc.length >= 17) return;
-	calc = calc + value;
+	if (calc.length > 16) return;
+	calc += value;
 	updateDisplay(calc);
 }
 
@@ -17,7 +17,6 @@ function calculate() {
 		calc = "error";
 	}
 	updateDisplay(calc);
-	calc = "";
 }
 
 function displayClear() {
