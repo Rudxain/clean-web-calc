@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang=en>
 	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css">
-		<meta name="color-scheme" content="light dark">
-		<link rel="icon" href="icon.svg">
-		<title>cleanCalc</title>
+		<meta charset=utf-8>
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<link rel=stylesheet href=style.css>
+		<meta name=color-scheme content="light dark">
+		<link rel=icon href=icon.svg>
+		<title>clean calculator</title>
+		<script src=index.js defer></script>
 	</head>
 	<body>
-		<script src="index.js"></script>
-		<div class="calcLayout">
-			<p id="display" class="display"></p>
-			<button onclick="displayClear()"; class="cancelButton">C</button>
-			<button onclick="input('(')">(</button>
-			<button onclick="input(')')">)</button>
-			<button onclick="input('/')">/</button>
+		<div id=root>
+			<p id=display></p>
+			<button id=cancel>C</button>
+			<button>(</button>
+			<button>)</button>
+			<button>*</button>
 			<br>
-			<button onclick="input('1')"; class="numberButton">1</button>
-			<button onclick="input('2')"; class="numberButton">2</button>
-			<button onclick="input('3')"; class="numberButton">3</button>
-			<button onclick="input('*')">*</button>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>/</button>
 			<br>
-			<button onclick="input('4')"; class="numberButton">4</button>
-			<button onclick="input('5')"; class="numberButton">5</button>
-			<button onclick="input('6')"; class="numberButton">6</button>
-			<button onclick="input('-')">-</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button>+</button>
 			<br>
-			<button onclick="input('7')"; class="numberButton">7</button>
-			<button onclick="input('8')"; class="numberButton">8</button>
-			<button onclick="input('9')"; class="numberButton">9</button>
-			<button onclick="input('+')">+</button>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+			<button>-</button>
 			<br>
-			<button onclick="input('.')">.</button>
-			<button onclick="input('0')"; class="numberButton">0</button>
-			<button onclick="input('>')">&gt;</button>
-			<button onclick="input('<')">&lt;</button>
+			<button>.</button>
+			<button>0</button>
+			<button>&gt;</button>
+			<button>&lt;</button>
 			<br>
-			<button onclick="calculate()"; class="evalButton">=</button>
+			<button id=eval>=</button>
 		</div>
 	</body>
 </html>

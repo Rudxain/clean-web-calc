@@ -1,4 +1,6 @@
-html, button {
+html,
+button {
+	/*monospace breaks layout*/
 	font-family: helvetica;
 	font-size: 18px;
 }
@@ -10,7 +12,7 @@ button {
 	border: none;
 }
 
-.calcLayout {
+#root {
 	background-color: #555;
 	width: 200px;
 	position: absolute;
@@ -21,9 +23,11 @@ button {
 	border-radius: 10px;
 }
 
-.evalButton { width: 92.5% }
+#eval {
+	width: 92.5%
+}
 
-.display {
+#display {
 	text-align: right;
 	margin: 5px;
 	margin-bottom: 15px;
@@ -35,21 +39,30 @@ button {
 }
 
 @media (prefers-color-scheme: light) {
-	.numberButton { background-color: #3ce }
+	#cancel {
+		background-color: #e33
+	}
 
-	.cancelButton { background-color: #e33 }
+	#eval {
+		background-color: #2e7
+	}
 
-	.evalButton { background-color: #2e7 }
-
-	.display { background-color: white }
+	#display {
+		background-color: white
+	}
 }
+
 /*dark theme has "warmer" colors to reduce blue light*/
 @media (prefers-color-scheme: dark) {
-	.numberButton { background-color: #3bb }
+	#cancel {
+		background-color: #c22
+	}
 
-	.cancelButton { background-color: #c22 }
+	#eval {
+		background-color: #4b2
+	}
 
-	.evalButton { background-color: #4b2 }
-
-	.display { background-color: black }
+	#display {
+		background-color: black
+	}
 }
